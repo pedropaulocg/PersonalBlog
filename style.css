@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #7e7d7d;        
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #332F2F ;
+    border-radius: 10px;       
+  }
+body{
+    background: #332F2F;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: white;
+    overflow-x: hidden;
+}
+#navbar{
+    width: 100%;
+    background: #413B3B;
+    height: 50px;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+#navbar nav{
+    padding-top: 15px;
+}
+#navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 45px;
+    list-style: none;
+}
+#navbar a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .4s;
+}
+#navbar a:hover{
+    color: rgb(173, 173, 173);
+    /* color:#A144FF; */
+}
+#home{
+    width: 100%;
+    height: 579px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+#nome{
+    margin: 135px 0 0 80px;
+}
+#nome h4{
+    font-size: 2rem;
+    font-weight: 400;
+}
+#nome h1{
+    font-size: 3.5rem;
+    color: #A144FF;
+}
+#icones{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: -5px;
+    width: 270px;
+    height: 50px;
+}
+#icones button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: -10px;
+}
+#icones img{
+    width: 44px;
+    height: 34px;
+    margin-left: 30px; 
+    transition: .2s;
+}
+#icones img:hover{
+    width: 48px;
+    height: 38px;
+}
+#foto{
+    width: 580px;
+    height: 580px;
+    background: #A144FF;
+    transform: translateX(500px);
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+#eu{
+    width: 480px;
+    height: 500px;
+    position: absolute;
+    top: 22.7%;
+    left: 35%;
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes slide{ 
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+#sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 60px;
+    background: #494242;
+    width: 100%;
+    height: 400px;
+}
+#quemsou img{
+    width: 320px;
+    height: 292px;
+}
+#quemsoutxt h2{
+    font-size: 29px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    margin-left: 15px;
+    border-bottom: 2px solid #A144FF;
+}
+#quemsoutxt p{
+    text-align: justify;
+}
+#habilidades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 60px;
+    width: 100%;
+    height: 400px;
+}
+#hab img{
+    width: 320px;
+    height: 292px;
+}
+#habtxt h2{
+    font-size: 29px;
+    font-weight: 400;
+    margin-bottom: 80px;
+    margin-left: 15px;
+    border-bottom: 2px solid #A144FF;
+    text-align: right;
+}
+#habtxt p{
+    margin-top: -30px;
+    text-align: justify;
+}
+#curiosidades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 60px;
+    background: #494242;
+    width: 100%;
+    height: 400px;
+}
+#curio img{
+    width: 320px;
+    height: 292px;
+}
+#curiotxt h2{
+    font-size: 29px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    margin-left: 15px;
+    border-bottom: 2px solid #A144FF;
+}
+#curiotxt{
+    margin-bottom: 70px;
+}
+#rodape{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#email{
+    position: absolute;
+    left: -999999px;
+}

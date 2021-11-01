@@ -25,7 +25,7 @@ body{
 #navbar{
     width: 100%;
     background: #413B3B;
-    height: 50px;
+    height: 3.125rem;
     position: fixed;
     z-index: 100;
     top: 0;
@@ -52,13 +52,13 @@ body{
 }
 #home{
     width: 100%;
-    height: 579px;
+    height: 93vh;
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 #nome{
-    margin: 135px 0 0 80px;
+    margin: 8.438rem 0 0 5rem;
 }
 #nome h4{
     font-size: 2rem;
@@ -71,30 +71,30 @@ body{
 #icones{
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
-    margin-left: -5px;
-    width: 270px;
-    height: 50px;
+    margin-top: 0.625rem;
+    margin-left: -0.313rem;
+    width: 16.875rem;
+    height: 3.125rem;
 }
 #icones button{
     background: none;
     border: none;
     cursor: pointer;
-    margin-top: -10px;
+    margin-top: -0.625rem;
 }
 #icones img{
-    width: 44px;
-    height: 34px;
-    margin-left: 30px; 
+    width: 2.75rem;
+    height: 2.125rem;
+    margin-left: 1.875rem; 
     transition: .2s;
 }
 #icones img:hover{
-    width: 48px;
-    height: 38px;
+    width: 3rem;
+    height: 2.375rem;
 }
 #foto{
-    width: 650px;
-    height: 580px;
+    width: 48%;
+    height: 93vh;
     background: #A144FF;
     transform: translateX(500px);
     animation-name: slide;
@@ -102,10 +102,10 @@ body{
     animation-fill-mode: forwards;
 }
 #eu{
-    width: 480px;
-    height: 500px;
+    width: 35%;
+    height: 79%;
     position: absolute;
-    top: 21%;
+    bottom: -1%;
     left: 35%;
     opacity: 0;
     animation-name: fade;
@@ -201,8 +201,4 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-#email{
-    position: absolute;
-    left: -999999px;
 }

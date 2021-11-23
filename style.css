@@ -100,13 +100,14 @@ body{
     animation-name: slide;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+    display: flex;
+    align-items: flex-end;
 }
 #eu{
-    width: 35%;
-    height: 79%;
+    width: 75%;
+    height: 84%;
     position: absolute;
-    bottom: -1%;
-    left: 35%;
+    left: -35%;
     opacity: 0;
     animation-name: fade;
     animation-duration: 1s;
